@@ -1,8 +1,8 @@
 #!/bin/sh
 # Python Skript erzeugt CSV auf stdout
-python3 parkplaetze.py < parkplaetze.html > run.csv
+python3 parkplaetze.py < test/parkplaetze.html > test/run.csv
 
-if diff -u parkplaetze.csv run.csv; then
+if diff -u test/parkplaetze.csv test/run.csv; then
   echo "OK: CSV matches expected output"
   exit 0
 else
