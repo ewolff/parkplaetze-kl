@@ -3,6 +3,9 @@ name: Parkplätze messen
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -21,3 +24,16 @@ jobs:
 
       - name: Messen
         run: ./run.sh
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add parkplatzdaten.csv
+
+          # only commit if there are changes
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Neue Messung"
+          git push
