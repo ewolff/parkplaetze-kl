@@ -6,7 +6,7 @@ den Einzelhandel
 Kaiserslautern retten können. Stellt sich die Frage: Wie viele
 Parkplätze sind denn eigentlich in Kaiserslautern frei?
 
-Diese Software liest die Anzahl der Parkplätze von der [Website
+Diese Software liest die Anzahl der freien Parkplätze von der [Website
 kaiserslautern.de](https://www.kaiserslautern.de/sozial_leben_wohnen/verkehr_parken/autos_und_co/parken/index.html.de)
 mit einem Timestamp einmal pro Stunde aus.
 
@@ -15,6 +15,8 @@ Die Ergebnisse stehen als
 bereit. Die kann man dann in Excel importieren wie
 [hier](https://support.microsoft.com/de-de/excel/get-started/import-or-export-text-txt-or-csv-files)
 beschrieben.
+Auf den Namen des Parkplatzes folgen die Anzahl der freien Parkplätze
+zu dem jeweiligen Zeitpunkt.
 
 Die Software steht unter [Apache-2.0-Lizenz](LICENSE). Das erlaubt eine recht
 freie Benutzung.
