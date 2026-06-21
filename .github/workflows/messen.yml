@@ -19,5 +19,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Messe
-        run: run.sh
+      - name: Messen
+        run: ./run.sh
