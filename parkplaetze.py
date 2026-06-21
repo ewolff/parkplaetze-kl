@@ -24,8 +24,8 @@ for tr in soup.find_all("tr"):
     except ValueError:
         continue
 
-    if 
-    row.extend([name, belegung])
+    if name not in row:
+        row.extend([name, belegung])
 
 writer = csv.writer(sys.stdout)
 writer.writerow(row)
