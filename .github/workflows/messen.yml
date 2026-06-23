@@ -2,7 +2,7 @@ name: Parkplätze messen
 
 on:
   schedule:
-    - cron: "28 5-20 * * *"
+    - cron: "12,42 5-20 * * *"
   workflow_dispatch:
 
 # Zeit in UTC, also 7-22 Berliner Zeitzone
